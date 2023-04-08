@@ -20,6 +20,6 @@ function getComputerChoice() {
 
 function getPlayerChoice() {
     let playerChoice = prompt("Rock, paper, or scissors?");
-    console.log(playerChoice.toUpperCase());
+    return playerChoice.toUpperCase();
 }
 
