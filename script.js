@@ -17,3 +17,9 @@ function getComputerChoice() {
     }
     return computerChoice;
 }
+
+function getPlayerChoice() {
+    let playerChoice = prompt("Rock, paper, or scissors?");
+    console.log(playerChoice.toUpperCase());
+}
+
