@@ -35,37 +35,37 @@ function playRound(playerSelection, computerSelection) {
     let result;
     
     if (playerSelection === "ROCK" && computerSelection === "ROCK") {
-        return result = "You tied! You both chose ROCK";
+        return result = `You tied! You both chose ${playerSelection}`;
     }
     else if (playerSelection === "ROCK" && computerSelection === "PAPER") {
         computerScore++;
-        return result = "You lose! PAPER beats ROCK";
+        return result = `You lose! ${computerSelection} beats ${playerSelection}`;
     }
     else if (playerSelection === "ROCK" && computerSelection === "SCISSORS") {
         playerScore++;
-        return result = "You win! ROCK beats SCISSORS";
+        return result = `You win! ${playerSelection} beats ${computerSelection}`;
     }
     else if (playerSelection === "PAPER" && computerSelection === "ROCK") {
         playerScore++;
-        return result = "You win! PAPER beats ROCK";
+        return result = `You win! ${playerSelection} beats ${computerSelection}`;
     }
     else if (playerSelection === "PAPER" && computerSelection === "PAPER") {
-        return result = "You tied! You both chose PAPER";
+        return result = `You tied! You both chose ${playerSelection}`;
     }
     else if (playerSelection === "PAPER" && computerSelection === "SCISSORS") {
         computerScore++;
-        return result = "You lose! SCISSORS beats PAPER";
+        return result = `You lose! ${computerSelection} beats ${playerSelection}`;
     }
     else if (playerSelection === "SCISSORS" && computerSelection === "ROCK") {
         computerScore++;
-        return result = "You lose! ROCK beats SCISSORS";
+        return result = `You lose! ${computerSelection} beats ${playerSelection}`;
     }
     else if (playerSelection === "SCISSORS" && computerSelection === "PAPER") {
         playerScore++;
-        return result = "You win! SCISSORS beats PAPER";
+        return result = `You win! ${playerSelection} beats ${computerSelection}`;
     }
     else if (playerSelection === "SCISSORS" && computerSelection === "SCISSORS") {
-        return result = "You tied! You both chose SCISSORS";
+        return result = `You tied! You both chose ${playerSelection}`;
     }
 }
 
